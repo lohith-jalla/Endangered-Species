@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    background-color:rgb(236, 228, 228);
+    overflow-x:hidden;
+}
+
+.nav{
+    width: 100%;
+    height:7rem;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.nav .logo{ 
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.nav .logo img{
+    width: 60%;
+    height:7em;
+}
+
+.nav .links{
+    width: 30%;
+    transform: 2s;
+}
+/* *********************new Animation same as shrey sir website***************** */
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #FBAB7E;
+    transition: width 1s ease-in-out;
+    z-index: 0;
+}
+  
+body.loaded::before {
+    width: 100%;
+}
+  
+#body span {
+    position: relative;
+    z-index: 1;
+}
+/* *********************new Animation same as shrey sir website***************** */
+.nav .links button{
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+    /* backdrop-filter: blur(20px); */
+    padding:10px;
+    border-radius: 10px;
+    margin:10px;
+}
+
+.hero{
+    width: 100vw;
+    height:70vh;
+    background:url('/images/forest-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content{
+    background-color:rgb(236, 228, 228); 
+    width:100%;
+    height:25vh;
+    margin-top:-1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+}
+
+.content h2{
+    font-size: 2.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wwd{
+    width:100%;
+    height:150vh;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    /* border-top-left-radius:150px;
+    border-top-right-radius:150px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column  ;
+    padding:1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading{
+    color:White;
+    font-size: 2rem;
+    padding-top:0.5em;
+    border-top: 2px solid white;
+    margin:1rem;
+}
+
+.heading_content{
+    color:white;
+    font-size: 2.2em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading_content #hash{
+    font-size: 1.5rem;
+    color:blueviolet;
+}
+
+.grid{
+    width:90%;
+    height:175vh;
+    background-color: transparent;
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding-top:2.5rem;
+    gap:1.2rem;
+    border-top: 5px solid white;
+    margin:1rem;
+}
+
+.grid_content{
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.grid_content:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:414px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,1fr);
+    }
+}
+
+@media  (min-width:414px) and (max-width:1064px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+}
+
+@media (min-width:1064px) and (max-width:1387px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+
+.content-1{
+    background: url('/images/Birds-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.grid_content p{
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bolder;
+    backdrop-filter: blur(5px);
+}
+
+.content-2{
+    background: url('/images/rivers-1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-3{
+    background: url('/images/PolarBear.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-4{
+    background: url('/images/HImalayas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-5{
+    background: url('/images/people.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-6{
+    background: url('/images/Fishes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-7{
+    background: url('/images/rivers.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-8{
+    background: url('/images/ocean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.LearnAboutButton #but{
+    width: 12rem;
+    height:3rem;
+    border-radius:10px;
+    background-color: rgb(236, 236, 13);
+    color:black;
+    font-size: 1em;
+    padding:0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+#but:hover{
+    background-color: rgb(176, 176, 15);
+}
+
+.Hidden_content-1 , .Hidden_content-2 , .Hidden_content-3 , .Hidden_content-4{
+    width:89vw;
+    height: 55vh;
+    position: absolute;
+    display:none;
+    z-index: 20;
+    background-color: rgb(47, 170, 226);
+    top:198.7vh;
+    left:5.8vw;
+    border-radius: 10px;
+}
+
+.Hidden_content-5,.Hidden_content-6,.Hidden_content-7,.Hidden_content-8 {
+    width:89vw;
+    height:55vh;
+    position: absolute;
+    display:none;
+    z-index: 20;
+    background-color: white;
+    top: 142vh;
+    left:5.8vw;
+    border-radius: 10px;
+    
+}
+
+.content-1:hover ~ .Hidden_content-1 , .content-2:hover ~ .Hidden_content-2 ,
+.content-3:hover ~ .Hidden_content-3 ,.content-4:hover ~ .Hidden_content-4 ,
+.content-5:hover ~ .Hidden_content-5 ,.content-6:hover ~ .Hidden_content-6 ,
+.content-7:hover ~ .Hidden_content-7 ,.content-8:hover ~ .Hidden_content-8{
+    display: block; 
+    background-color: transparent;
+    backdrop-filter: blur(10px);  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Hidden_content-1{
+    background: url('/images/Birds-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hidden_content-2{
+    background: url('/images/rivers-1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hidden_content-3{
+    background: url('/images/PolarBear.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hidden_content-4{
+    background: url('/images/HImalayas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hidden_content-5{
+    background: url('/images/forest-2.png');
+    background-repeat:  no-repeat;
+    background-size: cover;
+}
+
+.Hidden_content-6{
+    background: url('/images/Fishes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hidden_content-7{
+    background: url('/images/rivers.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hidden_content-8{
+    background: url('/images/ocean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub{
+  width:80%;
+  height:80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px); 
+  border-radius: 10px;
+}
+
+
+
+
+
