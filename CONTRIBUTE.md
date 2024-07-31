@@ -130,7 +130,7 @@ Your involvement helps to improve the project and make it better for everyone. T
    - Once you're satisfied, click the "Create pull request" button to submit your pull request.
 
 9. **Wait for Review:**
-    Your pull request will now be available for review by the project maintainers. They may provide feedback or ask for changes before merging your pull request into the main branch of the SwapReads repository.
+    Your pull request will now be available for review by the project maintainers. They may provide feedback or ask for changes before merging your pull request into the main branch of the Endangered-Species repository.
 
 ## **Issue Report Process 📌**
 
